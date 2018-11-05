@@ -1,0 +1,48 @@
+.avatar {
+    max-width: 32px;
+    height: auto;
+    border-radius: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.avatar-sm {
+    max-width: 26px;
+}
+
+.avatar-large {
+    max-width: 50px;
+    border-radius: 25px;
+}
+
+.avatar-upload {
+    position: relative;
+    background: $light-gray;
+    border: 1px dashed darken($light-gray, 10);
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 10px auto;
+    padding: 5px;
+    border-radius: 46px;
+    &-image {
+        max-width: 80px;
+        border-radius: 40px;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+    }
+    &-field {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+}
+
+.avatar-upload-text {
+    text-align: center;
+    font-size: 13px;
+    color: darken($light-gray, 50);
+}

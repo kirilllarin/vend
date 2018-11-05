@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'vicons';
+    src: url('../fonts/vicons.ttf') format('truetype'),
+    url('../fonts/vicons.woff') format('woff'),
+    url('../fonts/vicons.svg#vicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'vicons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.45em;
+}
+
+.icon-chevron-up:before {
+    content: "\e91c";
+}
+
+.icon-search:before {
+    content: "\e91d";
+}
+
+.icon-address-book:before {
+    content: "\e900";
+}
+
+.icon-arrow-heads:before {
+    content: "\e901";
+}
+
+.icon-arrow-right:before {
+    content: "\e902";
+}
+
+.icon-bars:before {
+    content: "\e903";
+}
+
+.icon-bell:before {
+    content: "\e904";
+}
+
+.icon-bubbles:before {
+    content: "\e905";
+}
+
+.icon-calendar:before {
+    content: "\e906";
+}
+
+.icon-chart:before {
+    content: "\e907";
+}
+
+.icon-checked:before {
+    content: "\e908";
+}
+
+.icon-clock:before {
+    content: "\e909";
+}
+
+.icon-delete:before {
+    content: "\e90a";
+}
+
+.icon-dots:before {
+    content: "\e90b";
+}
+
+.icon-file:before {
+    content: "\e90c";
+}
+
+.icon-flame:before {
+    content: "\e90d";
+}
+
+.icon-folder:before {
+    content: "\e90e";
+}
+
+.icon-gear:before {
+    content: "\e90f";
+}
+
+.icon-info:before {
+    content: "\e910";
+}
+
+.icon-key:before {
+    content: "\e911";
+}
+
+.icon-paper-clip:before {
+    content: "\e912";
+}
+
+.icon-pencil:before {
+    content: "\e913";
+}
+
+.icon-plus:before {
+    content: "\e914";
+}
+
+.icon-stack:before {
+    content: "\e915";
+}
+
+.icon-star:before {
+    content: "\e916";
+}
+
+.icon-star-o:before {
+    content: "\e917";
+}
+
+.icon-tag:before {
+    content: "\e918";
+}
+
+.icon-unchecked:before {
+    content: "\e919";
+}
+
+.icon-user:before {
+    content: "\e91a";
+}
+
+.icon-users:before {
+    content: "\e91b";
+}
+
+i[class*=icon] {
+    color: $text-gray;
+    &.text-green {
+        color: $green;
+    }
+}
+
+.btn, .label {
+    i[class*=icon] {
+        position: relative;
+        top: 2px;
+        line-height: 1em;
+        margin-right: 5px;
+        &.text-green {
+            color: $green;
+        }
+    }
+}
+
+.log-card-active i[class*=icon],
+.label-dark i[class*=icon],
+.label-warn i[class*=icon] {
+    color: #fff;
+}

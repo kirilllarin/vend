@@ -1,0 +1,25 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    th {
+        text-align: left;
+        border-bottom: 2px solid $light-gray;
+        padding: 10px;
+    }
+    td {
+        border-bottom: 1px solid $light-gray;
+        padding: 10px;
+        .text-more {
+            width: 490px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    tr:last-child td {
+        border: 0;
+    }
+    > thead > tr > th {
+        border-color: $light-gray;
+    }
+}

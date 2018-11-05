@@ -1,0 +1,26 @@
+.panel {
+    border: 0;
+    background: #FFF;
+    @include wbox;
+    &-body {
+        padding: 20px 40px;
+    }
+    &-heading {
+        padding: 30px 40px 10px 40px;
+        h2 {
+            margin: 0;
+        }
+    }
+}
+
+.login-panel {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.panel-lg {
+    .panel-heading,
+    .panel-body {
+        padding: 20px 40px;
+    }
+}

@@ -1,0 +1,24 @@
+.alert {
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+    p {
+        margin: 0;
+    }
+
+    &-success {
+        background: $green;
+        color: #fff;
+    }
+
+    &-danger {
+        background: $alert;
+        color: #fff;
+    }
+
+    &-info {
+        background: $light-gray;
+        color: $text-gray;
+    }
+}

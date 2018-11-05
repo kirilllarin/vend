@@ -1,0 +1,27 @@
+.comment {
+    border-bottom: 1px solid $gray;
+    font-size: 14px;
+    padding: 15px 0;
+    &:last-child {
+        border: 0;
+    }
+    b {
+        margin-bottom: 10px;
+    }
+}
+
+.comment-head {
+    margin-bottom: 5px;
+}
+
+.comment-body {
+    margin-left: 50px;
+    p:last-child {
+        margin: 0;
+    }
+}
+
+.comment-avatar {
+    float: left;
+    width: 50px;
+}

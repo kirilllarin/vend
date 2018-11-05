@@ -1,0 +1,71 @@
+.header {
+    background-color: $sidebar;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 20px;
+    width: 230px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    @include clearfix;
+
+    i[class^=icon] {
+        color: transparentize(#fff, .7);
+    }
+
+    &-title {
+        background: url('../images/logo-dark.svg') no-repeat 0 center;
+        display: block;
+        background-size: contain;
+        height: 26px;
+        margin: 18px 0;
+    }
+
+    &-nav {
+        display: block;
+        padding: 55px 0;
+        a {
+            padding: 10px 10px;
+            border-radius: 3px;
+            text-align: left;
+            display: block;
+            color: #fff;
+            &.active {
+                background: transparentize(#fff, .9);
+            }
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &-blocks {
+        flex: 1;
+        overflow-y: auto;
+        padding-top: 10px;
+        @include dark-scrollbar;
+    }
+
+    &-bottom-nav {
+        padding: 20px 0;
+    }
+
+    .counter {
+        background: $warn;
+        padding: 0 4px;
+        font-size: 10px;
+        color: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        right: 20%;
+        line-height: 1.4em;
+    }
+
+    .text-muted {
+        color: rgba(255, 255, 255, .5);
+    }
+}

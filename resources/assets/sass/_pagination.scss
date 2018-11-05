@@ -1,0 +1,16 @@
+.pagination {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+    border: 1px solid $gray;
+    a, span {
+        display: inline-block;
+        padding: 8px 10px;
+        border-color: $gray;
+    }
+    .active a {
+        color: #FFF;
+        background: $primary;
+    }
+}

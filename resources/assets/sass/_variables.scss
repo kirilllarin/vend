@@ -1,0 +1,111 @@
+//$common: #313f54;
+$common: #22313f;
+$highlight: #00A3D9;
+$warn: #e9a045;
+$alert: #f16197;
+//$purple: #6a79c1;
+$purple: #6675be;
+$sidebar: #46589c;
+
+$blue: #77a4f3;
+$green: #12B4AF;
+$green-light: #13d5d0;
+$light-gray: #e6e8ee;
+$border-color: darken($light-gray, 3);
+$text-gray: #899da9;
+
+$border-radius-base: 3px;
+
+$btn-padding: 8px 10px;
+
+$modal-body-padding: 20px 30px;
+$modal-header-padding: 15px 30px;
+$modal-footer-padding: 15px 30px 25px 30px;
+
+$padding-tabs: 15px;
+$padding-base: 8px 15px;
+$padding-base-sm: 5px 10px;
+$padding-base-lg: 12px 15px;
+$padding-base-vertical: 8px;
+$padding-base-horizontal: 15px;
+
+$zindex-info-bar: 85;
+$zindex-title-bar: 90;
+$zindex-modal: 101;
+$zindex-dropdown: 100;
+
+@mixin gradient() {
+    background: rgb(19, 26, 66);
+    background: linear-gradient(135deg, $sidebar 0%, $blue 100%);
+}
+
+@mixin scrollbar() {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: darken($light-gray, 10);
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+}
+
+@mixin dark-scrollbar() {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, .15);
+    }
+
+    &::-webkit-scrollbar-button {
+        background-color: #fff;
+        display: none;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin shadow() {
+    box-shadow: 0 5px 15px rgba(0, 30, 50, 0.25);
+}
+
+@mixin shadow-lg() {
+    box-shadow: 0 5px 30px rgba(0, 30, 50, 0.15);
+}
+
+@mixin shadow-sm() {
+    box-shadow: 0 1px 1px rgba(0, 30, 50, 0.15);
+}
+
+@mixin shadow-sm-light() {
+    box-shadow: 0 1px 1px rgba(0, 30, 50, 0.05);
+}

@@ -1,0 +1,125 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $zindex-modal;
+    background: rgba(15, 40, 90, 0.7);
+    opacity: 0;
+    transition: opacity linear .3s;
+    overflow-y: auto;
+    &-close {
+        position: absolute;
+        right: -40px;
+        background: rgba(255, 255, 255, .2);
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+        i {
+            color: #fff;
+            line-height: 30px;
+        }
+    }
+
+    &-footer-meta {
+        background: $light-gray;
+        padding: 15px 30px;
+        .form-control {
+            border-color: #fff;
+            background: #fff;
+            @include shadow-sm;
+        }
+    }
+
+    &.in {
+        opacity: 1;
+    }
+    &-dialog {
+        position: relative;
+        max-width: 700px;
+        margin: 50px auto;
+        //background: #FFF;
+        background: lighten($light-gray, 4);
+        border-radius: 4px;
+    }
+    &-body {
+        padding: $modal-body-padding;
+        &-highlight {
+            background: #fff;
+            @include shadow-sm;
+        }
+    }
+    &-title {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 100px;
+        font-weight: normal;
+    }
+    &-footer {
+        padding: $modal-footer-padding;
+        text-align: right;
+    }
+    &-backdrop {
+        background: #30456b;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        opacity: .7;
+    }
+    &-content {
+        border: 0;
+        min-height: 100px;
+        @include shadow-lg;
+    }
+    &-loading {
+        background: url('../images/loading.svg') no-repeat center;
+        height: 300px;
+    }
+    &-header {
+        background-color: $purple;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom: 0;
+        padding: $modal-header-padding;
+        text-align: center;
+        color: #FFF;
+        position: relative;
+        a {
+            color: #FFF;
+        }
+    }
+    &-header-left,
+    &-header-right {
+        position: absolute;
+        top: 15px;
+        font-size: 14px;
+        a {
+            display: inline-block;
+            border: 1px solid rgba(0, 0, 0, .2);
+            padding: 5px 15px;
+            border-radius: 15px;
+            margin-left: 5px;
+            &:hover {
+                background: rgba(0, 0, 0, .2);
+            }
+        }
+    }
+    &-header-left {
+        left: 15px;
+    }
+    &-header-right {
+        right: 15px;
+    }
+    &-meta {
+        margin: 15px 0 0 0;
+    }
+    &-close {
+        float: right;
+    }
+}

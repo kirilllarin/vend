@@ -1,0 +1,9 @@
+.notifications {
+    @include scrollbar;
+    a {
+        color: #fff;
+    }
+    .dropdown-menu {
+        border: 0;
+    }
+}

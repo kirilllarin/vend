@@ -1,0 +1,79 @@
+.form-control {
+    box-shadow: none;
+    display: inline-block;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: $border-radius-base;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: $padding-base;
+    transition-duration: .2s;
+    @include shadow-sm;
+    &-sm {
+        padding: $padding-base-sm;
+        font-size: 13px;
+    }
+    &-lg {
+        font-size: 18px;
+        padding: $padding-base-lg;
+    }
+    &-o {
+        background: transparent;
+    }
+    &:focus {
+        outline: none;
+        border-color: $blue;
+        background: #FFF;
+        position: relative;
+    }
+}
+
+.form-group {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group {
+    display: flex;
+    > .btn,
+    > .form-control {
+        border-radius: 0;
+        white-space: nowrap;
+        border-right-color: $light-gray;
+        &:first-child {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            margin-left: 0;
+        }
+        &:last-child {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-right-color: #fff;
+        }
+    }
+    > .btn:hover {
+        border-right-color: $blue;
+    }
+}
+
+.form-inline {
+    display: flex;
+    margin: 0 -5px;
+    .form-group {
+        padding: 0 5px;
+        flex: 1;
+        white-space: nowrap;
+    }
+    .form-group-btn {
+        flex: inherit;
+    }
+}
+
+.form-label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 0;
+    display: block;
+}

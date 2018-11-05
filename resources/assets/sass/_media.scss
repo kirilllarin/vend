@@ -1,0 +1,100 @@
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    .media {
+        border: 0;
+        width: 270px;
+        background: lighten($light-gray, 5);
+        margin: 0 5px 5px 0;
+        padding: 5px;
+        font-size: 13px;
+        &-header {
+            word-break: break-all;
+            width: 150px;
+        }
+        &-left {
+            padding: 0;
+        }
+        &-body {
+            padding-left: 10px;
+            width: auto;
+        }
+        &-image {
+            border-radius: 3px;
+            vertical-align: middle;
+            max-width: 60px;
+        }
+    }
+}
+
+.media {
+    border-bottom: 1px solid $light-gray;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    &-center {
+        align-items: center;
+    }
+    &-dark {
+        border-color: transparentize(#fff, .9);
+        a {
+            color: #fff;
+        }
+    }
+    &-left {
+        padding-right: 15px;
+        position: relative;
+    }
+    &-body {
+        flex: 1;
+        .avatar {
+            float: left;
+            display: block;
+            margin-right: 10px;
+        }
+        p {
+            margin: 5px 0;
+        }
+    }
+    &-header a {
+        color: $common;
+    }
+    &-sm {
+        padding: 10px 0;
+        line-height: 1.3em;
+    }
+    &-sm &-left {
+        padding-right: 8px;
+    }
+    &:last-child {
+        border: 0;
+    }
+    &-left-sm {
+        min-width: 150px;
+    }
+    &-left-md {
+        min-width: 200px;
+    }
+    &-left-lg {
+        min-width: 250px;
+    }
+    &-stamp {
+        background: $blue;
+        color: #FFF;
+        text-align: center;
+        width: 80px;
+        border-radius: 3px;
+        padding: 10px;
+        min-height: 60px;
+        b {
+            font-size: 20px;
+            display: block;
+        }
+    }
+    &-image {
+        max-width: 40px;
+        border-radius: 3px;
+        display: inline-block;
+        vertical-align: top;
+    }
+}

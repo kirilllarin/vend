@@ -1,0 +1,23 @@
+<?xml version="1.0" standalone="no"?>
+<!-- Generator: Adobe Fireworks 10, Export SVG Extension by Aaron Beall (http://fireworks.abeall.com) . Version: 0.6.1  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg id="Vev%20logo%202.fw-logo%20Copy%201" viewBox="0 0 41 26" style="background-color:#ffffff00" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+	x="0px" y="0px" width="41px" height="26px"
+>
+	<defs>
+		<linearGradient id="gradient1" x1="102.9887%" y1="0%" x2="102.9887%" y2="100%">
+			<stop stop-color="#ffffff" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#cadcf9" stop-opacity="1" offset="100%"/>
+		</linearGradient>
+		<linearGradient id="gradient2" x1="80.3333%" y1="37.0017%" x2="80.3333%" y2="100%">
+			<stop stop-color="#ffffff" stop-opacity="1" offset="0%"/>
+			<stop stop-color="#cadcf9" stop-opacity="1" offset="100%"/>
+		</linearGradient>
+	</defs>
+	<g id="Layer_1_1">
+		<path d="M 17.5674 14.4735 L 21.92 7.1545 C 23.6661 4.0523 21.9745 2 17.4401 2 L 6.9869 2 L 6.9869 3.6421 L 14.3386 3.6227 C 16.6171 3.6227 17.3394 4.2632 16.1765 6.1764 L 14.3804 9.1424 L 17.5674 14.4735 Z" fill="url(#gradient1)"/>
+		<path d="M 17.3079 23 C 17.3079 23 19.4892 21.7799 20.7998 19.4845 L 30.5124 3.4795 C 31.2241 2.3323 37.6569 2.335 36.9451 3.4795 L 26.3138 21.0909 C 25.2025 22.8789 23.6938 23 21.627 23 C 19.8695 23 17.3079 23 17.3079 23 Z" fill="url(#gradient2)"/>
+		<path d="M 10.9384 2 L 6.4968 2 C 5.6213 2 4.7163 2.0884 4.2944 2.8742 C 3.9816 3.4582 3.9205 4.0952 4.0995 4.7143 L 13.971 21.0909 C 15.0822 22.8789 16.5909 23 18.6577 23 L 22.9769 23 C 22.9769 23 20.7956 21.7799 19.485 19.4845 C 19.485 19.4845 10.8669 5.1191 10.0296 3.6789 C 9.1924 2.2386 10.9384 2 10.9384 2 Z" fill="#ffffff"/>
+	</g>
+</svg>

@@ -1,0 +1,73 @@
+.timewidget {
+    display: inline-block;
+    .dropdown-menu {
+        right: 0;
+        left: auto;
+        min-width: 260px;
+        padding: 0;
+        margin: 0;
+        a {
+            color: $common;
+        }
+    }
+    &-toggle {
+        width: 60px;
+        color: #FFF;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        span {
+            display: block;
+        }
+    }
+    &-log-title {
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 130px;
+        vertical-align: top;
+    }
+    .list-item {
+        padding: 7px 10px;
+    }
+    &.active &-toggle {
+        background-color: $green;
+    }
+    &-button {
+        background: url('../images/pause.svg') no-repeat center;
+        border: 1px solid rgba(255, 255, 255, .3);
+        border-radius: 20px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        transition-duration: .3s;
+        &:hover {
+            background-color: rgba(0, 0, 0, .1);
+        }
+    }
+    &-title {
+        color: #FFF;
+        text-align: center;
+        display: block;
+    }
+    &-time {
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FFF;
+    }
+    &-stopper {
+        font-size: 18px;
+        background-color: $green;
+        padding: 20px !important;
+        color: #FFF;
+        display: block;
+        text-align: center;
+    }
+}
+
+.card-timer span {
+    color: #FFF;
+}

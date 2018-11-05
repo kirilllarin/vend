@@ -1,0 +1,36 @@
+.list-item {
+    display: block;
+    border-bottom: 1px solid $gray;
+    padding: 8px 0;
+    @include clearfix;
+    &:last-child {
+        border: 0;
+    }
+    .avatar {
+        margin: 0 5px;
+    }
+    .form-control {
+        margin: 0 10px;
+        padding: 5px 15px;
+    }
+    &-pd {
+        padding: 5px 0;
+    }
+}
+
+.list-item-right {
+    float: right;
+}
+
+.list-item-label {
+    background: transparentize($common, .7);
+    color: #FFF;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.list-item-group {
+    display: flex;
+    align-items: center;
+}

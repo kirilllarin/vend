@@ -1,0 +1,42 @@
+.timer {
+    background: #12B4AF;
+    margin: 20px 0;
+    border-radius: 3px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    &-left,
+    &-right {
+        i[class^=icon] {
+            color: #fff;
+        }
+    }
+    &-left {
+        flex: 1;
+        padding: 10px 15px;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        a {
+            color: #fff;
+        }
+    }
+    &.active {
+        background: $warn;
+    }
+    &-title {
+        display: block;
+    }
+    .dropdown-toggle {
+        padding: 10px 15px;
+        display: block;
+    }
+    &-dropdown .dropdown-menu {
+        min-width: 230px;
+    }
+}
+
+.log-card-active {
+    background: $warn;
+    border-radius: 3px;
+    padding: 0 5px;
+    color: #FFF;
+}

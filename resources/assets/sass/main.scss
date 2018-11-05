@@ -1,0 +1,30 @@
+@import "variables";
+@import "icons";
+@import "utilities";
+@import "forms";
+@import "grid";
+@import "buttons";
+@import "common";
+@import "wbox";
+@import "table";
+@import "alert";
+@import "main/wrapper";
+@import "main/header";
+@import "main/login";
+
+
+html,body {
+    height: 100%;
+}
+
+body {
+    background: lighten($light-gray, 3);
+}
+
+.logo {
+    background: url('../../../images/logo.svg') no-repeat center left;
+    display: block;
+    margin: 10px auto;
+    height: 36px;
+    width: 60px;
+}
